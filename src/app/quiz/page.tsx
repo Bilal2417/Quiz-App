@@ -60,9 +60,7 @@ function Quiz() {
     } catch (error) {
       console.log(error);
     } finally {
-      if(questions.length > 3){
         setLoading(false);
-      }
     }
   }
 
