@@ -39,7 +39,7 @@ function Quiz() {
   const [score, setScore] = useState<number>(0);
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [loading, setLoading] = useState<boolean>();
+  const [loading, setLoading] = useState<boolean>(true);
 
   const category = useSelector((store: RootState) => store.quizSlice.category);
   const amount = useSelector((store: RootState) => store.quizSlice.amount);
@@ -62,15 +62,6 @@ function Quiz() {
     } finally {
       if(questions.length > 3){
         setLoading(false);
-      }
-      else{
-        const myTimeout = setTimeout(()=>{setLoading(true)
-          if(loading){
-            return <Loader/>
-          }
-         }, 5000);
-        route.push("../error")
-
       }
     }
   }
