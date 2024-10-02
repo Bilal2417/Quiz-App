@@ -5,7 +5,7 @@ import axios from "axios";
 import "./home.css";
 import { useRouter } from "next/navigation";
 import ReduxProvider from "../reduxProvider/reduxProvider";
-import { UseDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   addAmount,
   addCategory,
