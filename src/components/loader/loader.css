@@ -1,6 +1,12 @@
 /* HTML: <div class="loader"></div> */
-.loader {
-    width: 50px;
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#l20 {
+    width: 100px;
     aspect-ratio: 1;
     border-radius: 50%;
     border: 8px solid #514b82;

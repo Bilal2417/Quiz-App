@@ -1,0 +1,65 @@
+body{
+    background-color: #514b82;
+}
+.row{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.bs-docs-example{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.selectpicker {
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    border-right: 5px solid #d9d4d4;
+    border-bottom: 5px solid #d9d4d4;
+}
+.selectpicker:hover{
+    cursor: pointer;
+}
+.selectpicker:focus{
+    outline: none;
+}
+.submit-button{
+    background-color: #5c5cff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1.4em;
+    font-weight: 600;
+    border-bottom: 6px solid #4b4be1;
+    border-right: 6px solid #4b4be1;
+}
+.submit-button:hover{
+    background-color: #4b4bdd;
+}
+.submit-button:active{
+    background-color: #3535b6;
+}
+
+.submit-button.disabled {
+    background-color: grey;
+    border-bottom: 5px solid #555555;
+    border-right: 5px solid #555555;
+}
+#selectionInput{
+    border-radius: 12px;
+    box-sizing: content-box;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    touch-action: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #1976d2;
+    height: 8px;
+    width: 100%;
+    padding: 15px 0;
+}

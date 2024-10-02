@@ -20,7 +20,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <head>
+      <link
+    href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css"
+    rel="stylesheet"
+    id="bootstrap-css"
+  />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable}  flex` }>
         {children}
       </body>
     </html>
