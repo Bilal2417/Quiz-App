@@ -1,13 +1,14 @@
+// src/app/page.tsx or any relevant path
+import React from 'react';
+import Home from '../components/home/home'; 
 
-
-import Home from "../components/home/home";
-
-export default function Name() {
-
+const Name: React.FC = () => {
   return (
     <>
-    {/* <Loader/> */}
+      {/* <Loader /> */}
       <Home />
     </>
   );
-}
+};
+
+export default Name;
