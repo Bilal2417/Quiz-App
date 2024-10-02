@@ -5,7 +5,6 @@ import "./quiz.css";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { nanoid } from "@reduxjs/toolkit";
 import { useRouter } from "next/navigation";
 import { addQlength, addScore, completed } from "../../store/quizSlice";
 import Loader from "../../components/loader/loader";
@@ -156,7 +155,7 @@ function Quiz() {
           </div>
           <ul className="quiz-options">
             {options.map((option) => (
-              <li key={nanoid()} className="abc" id={option} onClick={checkAnswers}>
+              <li  className="abc" id={option} onClick={checkAnswers}>
                 {option}
               </li>
             ))}
